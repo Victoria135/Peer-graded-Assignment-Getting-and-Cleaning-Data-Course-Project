@@ -81,4 +81,4 @@ names(merged)<-gsub("tBody", "TimeBody", names(merged))
 Final <-aggregate(. ~Subject + Activities, merged, mean, na.rm = TRUE)
 
 ###Saving data in txt
-write.table(Final, "My project.txt", row.name=FALSE)
+write.table(Final, "Human Activity Recognition Using Smartphones.txt", row.name=FALSE)
